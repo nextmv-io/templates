@@ -1,0 +1,34 @@
+name: go lint
+on: [push]
+jobs:
+  go-lint:
+    runs-on: ubuntu-latest
+    # Use a matrix strategy to test all the modules simultaneously.
+    strategy:
+      fail-fast: false
+      matrix:
+        MOD_PATH:
+          [
+            ./go,
+          ]
+    steps:
+      - name: git clone
+        uses: actions/checkout@v4
+
+      - name: set go version
+        run: |
+          export GO_VERSION=$(yq '.language-support.go.version' workflow-configuration.yml)
+          echo "This is the Go version => $GO_VERSION"
+          echo "GO_VERSION=${GO_VERSION}" >> $GITHUB_ENV
+        working-directory: .nextmv/
+
+      - name: set up go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v4
+        with:
+          version: v1.56.2
+          working-directory: ${{ matrix.MOD_PATH }}

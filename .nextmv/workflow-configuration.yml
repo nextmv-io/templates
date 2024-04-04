@@ -1,0 +1,23 @@
+apps:
+  - name: python
+    type: python
+    app_id: python
+    description: Use Python to start writing your optimization model.
+  - name: java
+    type: java
+    app_id: java
+    description: Use Java to start writing your optimization model.
+  - name: go
+    type: go
+    app_id: go
+    description: Use Go to start writing your optimization model.
+
+# Main supported language versions.
+language-support:
+  go:
+    version: 1.22
+  python:
+    version: 3.11
+  java:
+    version: 21
+    distribution: temurin
