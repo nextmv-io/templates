@@ -53,4 +53,3 @@ the command `Dev Containers: Reopen in Container`.
   deployment can also be found on our [blog](https://www.nextmv.io/blog) and on
   our [documentation site](https://docs.nextmv.io).
 * Need more assistance? Send us an [email](mailto:support@nextmv.io)!
-

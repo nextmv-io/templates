@@ -8,6 +8,7 @@ import sys
 import time
 from typing import Any
 
+
 def main() -> None:
     """Entry point for the template."""
 
