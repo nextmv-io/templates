@@ -45,11 +45,11 @@ func format(greetingMessage string, duration time.Duration) output {
 		},
 		Statistics: statistics{
 			Run: runInfo{
-				Duration: float64(duration.Seconds()),
+				Duration: duration.Seconds(),
 			},
 			Result: result{
 				Value:    float64(len(greetingMessage)),
-				Duration: float64(duration.Seconds()),
+				Duration: duration.Seconds(),
 				Custom: map[string]string{
 					"greeting_message": greetingMessage,
 				},
