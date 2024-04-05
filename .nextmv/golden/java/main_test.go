@@ -18,6 +18,8 @@ func TestMain(m *testing.M) {
 // prepareApp builds the app and moves the resulting jar to this directory
 func prepareApp() {
 	build := exec.Command("mvn", "package")
+	build.Stdout = os.Stdout
+	build.Stderr = os.Stderr
 	build.Dir = "../../../java"
 	err := build.Run()
 	if err != nil {
