@@ -1,0 +1,11 @@
+{
+  "solutions": [{ "greetingMessage": "hello, nextmv!" }],
+  "statistics": {
+    "schema": "v1",
+    "run": { "duration": 0.0 },
+    "result": {
+      "value": 13.0,
+      "custom": { "greetingMessage": "hello, nextmv!" }
+    }
+  }
+}

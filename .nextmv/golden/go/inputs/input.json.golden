@@ -1,0 +1,20 @@
+{
+  "solutions": [
+    {
+      "greeting_message": "Hello, nextmv!"
+    }
+  ],
+  "statistics": {
+    "result": {
+      "custom": {
+        "greeting_message": "Hello, nextmv!"
+      },
+      "duration": 0.123,
+      "value": 14
+    },
+    "run": {
+      "duration": 0.123
+    },
+    "schema": "v1"
+  }
+}

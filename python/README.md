@@ -1,0 +1,56 @@
+# Nextmv Python template
+
+This template helps you writing your own optimization model in Python.
+It contains several files to easily deploy the model to the Nextmv
+platform.
+
+The most important files created are `main.py` and `input.json`.
+
+* `main.py` is the starting point for the model.
+* `input.json` is a sample input file.
+
+Follow these steps to run locally.
+
+1. The packages listed in the `requirements.txt` file are available when using
+   the runtime specified in the `app.yaml` manifest. This runtime is used when
+   making remote runs. When working locally, make sure that all the required
+   packages are installed:
+
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+
+1. Run the command below to check that everything works as expected:
+
+    ```bash
+    python3 main.py -input input.json -output output.json -recipient nextmv
+    ```
+
+1. A file `output.json` should have been created a greeting message.
+
+## Mirror running on Nextmv Cloud locally
+
+Pre-requisites: Docker needs to be installed.
+
+To run the application locally in the same docker image as the one used on the
+Nextmv Cloud, you can use the following command:
+
+```bash
+cat input.json | docker run -i --rm \
+-v $(pwd):/app ghcr.io/nextmv-io/runtime/ortools:latest \
+python3 /app/main.py
+```
+
+You can also debug the application by running it in a Dev Container. This
+workspace recommends to install the Dev Container extension for VSCode. If you
+have the extension installed, you can open the workspace in a container by using
+the command `Dev Containers: Reopen in Container`.
+
+## Next steps
+
+* Open `main.py` and start writing the model in python.
+* Further documentation, guides, and API references about custom modeling and
+  deployment can also be found on our [blog](https://www.nextmv.io/blog) and on
+  our [documentation site](https://docs.nextmv.io).
+* Need more assistance? Send us an [email](mailto:support@nextmv.io)!
+
