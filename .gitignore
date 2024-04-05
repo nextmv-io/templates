@@ -7,7 +7,7 @@ __pycache__/
 .vscode/
 
 # Outputs
-*output*
+*output.json
 
 # Ignore app binary files
 main.jar
