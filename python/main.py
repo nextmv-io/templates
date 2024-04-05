@@ -33,7 +33,7 @@ def main() -> None:
 
     # Read input data, solve the problem and write the solution.
     input_data = read_input(args.input)
-    log(f"{input_data["greeting"]}, {args.recipient}!")
+    log(f'{input_data["greeting"]}, {args.recipient}!')
 
     solution = solve(input_data, args.recipient)
     write_output(args.output, solution)
