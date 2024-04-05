@@ -1,11 +1,19 @@
 {
-  "solutions": [{ "greetingMessage": "hello, nextmv!" }],
-  "statistics": {
-    "schema": "v1",
-    "run": { "duration": 0.0 },
-    "result": {
-      "value": 13.0,
-      "custom": { "greetingMessage": "hello, nextmv!" }
+  "solutions": [
+    {
+      "greetingMessage": "Hello, nextmv!"
     }
+  ],
+  "statistics": {
+    "result": {
+      "custom": {
+        "greetingMessage": "Hello, nextmv!"
+      },
+      "value": 14
+    },
+    "run": {
+      "duration": 0.123
+    },
+    "schema": "v1"
   }
 }
