@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nextmv.example</groupId>
-  <artifactId>java</artifactId>
+  <artifactId>Java</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>Java model template.</description>
+  <description>Sample using Java.</description>
   <url>https://github.com/nextmv-io</url>
 
   <licenses>
