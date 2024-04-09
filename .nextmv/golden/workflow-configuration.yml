@@ -1,0 +1,10 @@
+apps:
+  - name: python
+    language: python
+    language-version: 3.11
+  - name: go
+    language: go # we always use our main version
+  - name: java
+    language: java
+    language-version: 21
+    distribution: temurin
