@@ -12,10 +12,5 @@
       "extensions": ["golang.go"]
     }
   },
-  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
-  "remoteUser": "root",
-  "containerEnv": {
-    "CC": "zig cc",
-    "CGO_ENABLED": "1"
-  }
+  "remoteUser": "root"
 }

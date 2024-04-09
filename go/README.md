@@ -20,12 +20,6 @@ go run . -runner.input.path input.json \
 
 A file `output.json` should have been created with a greeting message.
 
-## Push pre-requisites
-
-To push your app to the Nextmv platform via `nextmv app push ...`, you will need
-to have [_zig_](https://ziglang.org/download/) installed and available on your
-`$PATH`.
-
 ## Mirror running on Nextmv Cloud locally
 
 Pre-requisites: Docker needs to be installed.

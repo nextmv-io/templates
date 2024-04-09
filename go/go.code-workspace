@@ -7,7 +7,7 @@
   "launch": {
     "configurations": [
       {
-        "name": "Debug MIP",
+        "name": "Debug app",
         "type": "go",
         "request": "launch",
         "mode": "auto",
