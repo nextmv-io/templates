@@ -7,8 +7,9 @@ platform.
 The most important files created are `main.go` and `input.json`.
 
 * `main.go` is where you write your model.
+* `schema.go` contains the input and output schema definitions.
 * `input.json` is a sample input file that follows the input definition in
-`main.go`.
+`schema.go`.
 
 Run the command below to check that everything works as expected:
 
