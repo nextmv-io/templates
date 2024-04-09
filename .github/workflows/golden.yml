@@ -45,12 +45,20 @@ jobs:
           echo "IsJava: ${{ matrix.apps.language == 'java' }}"
           echo "Changes: ${{ steps.changes.outputs.src }}"
 
+      - name: set go version
+        run: |
+          export GO_VERSION=$(yq '.language-support.go.version' workflow-configuration.yml)
+          echo "This is the Go version => $GO_VERSION"
+          echo "GO_VERSION=${GO_VERSION}" >> $GITHUB_ENV
+        working-directory: .nextmv/
+
       # We always need to set up Go as it is also used by the golden file testing framework
       - name: Set up Go
         if: steps.changes.outputs.src == 'true'
         uses: actions/setup-go@v5
         with:
-          go-version: 1.22
+          go-version: ${{ env.GO_VERSION }}
+          cache-dependency-path: "**/*.sum"
 
       - name: Set up Python
         if: ${{ matrix.apps.language == 'python' && steps.changes.outputs.src == 'true' }}

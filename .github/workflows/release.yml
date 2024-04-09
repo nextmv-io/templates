@@ -15,7 +15,7 @@ on:
           - prod
       APPS:
         type: string
-        description: "The apps to release with this format: `app-dir1=version1,app-dir2=version2`. E. g.: `knapsack-gosdk=v1.2.0,knapsack-java-ortools=v1.2.0`"
+        description: "The apps to release with this format: `app-dir1=version1,app-dir2=version2`. E. g.: `go=v1.0.0,java=v1.0.0,python=v1.0.0`"
         required: true
 
 permissions:
@@ -87,6 +87,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
+          cache-dependency-path: "**/*.sum"
 
       - name: Install zig
         run: |
