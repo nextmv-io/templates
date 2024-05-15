@@ -3,12 +3,13 @@
 {
   "name": "Python",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "ghcr.io/nextmv-io/runtime/ortools:latest",
+  "image": "ghcr.io/nextmv-io/runtime/python:3.11",
   "customizations": {
     "vscode": {
       "extensions": ["ms-python.debugpy", "ms-python.python"],
       "settings": {
-        "python.defaultInterpreterPath": "python"
+        "python.defaultInterpreterPath": "python",
+        "postCreateCommand": "pip install -r requirements.txt"
       }
     }
   }

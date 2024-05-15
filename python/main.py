@@ -8,6 +8,8 @@ import sys
 import time
 from typing import Any
 
+from nextmv import __about__
+
 
 def main() -> None:
     """Entry point for the template."""
@@ -54,6 +56,7 @@ def solve(input_data: dict[str, Any], recipient: str) -> dict[str, Any]:
         "result": {
             "custom": {
                 "greeting_message": greetingMessage,
+                "nextmv_version": __about__.__version__,
             },
             "duration": duration,
             "value": len(greetingMessage),
