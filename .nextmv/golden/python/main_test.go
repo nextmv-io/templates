@@ -30,6 +30,10 @@ func TestGolden(t *testing.T) {
 					Key:         ".statistics.run.duration",
 					Replacement: golden.StableFloat,
 				},
+				{
+					Key:         ".statistics.result.custom.nextmv_version",
+					Replacement: "v0.0.0",
+				},
 			},
 			ExecutionConfig: &golden.ExecutionConfig{
 				Command:    "python3",

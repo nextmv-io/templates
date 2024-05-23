@@ -1,6 +1,4 @@
-# Add your packages.
-# ortools==9.8.3296
-# nextmv==0.4.0
-# numpy==1.26.4
-# pandas==2.2.0
-# scipy==1.12.0
+# Define the packages required by your project here.
+# For stability, it is recommended to fix the version of the packages here.
+# For example:
+nextmv==0.8.0

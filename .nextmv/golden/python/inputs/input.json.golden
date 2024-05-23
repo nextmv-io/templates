@@ -7,7 +7,8 @@
   "statistics": {
     "result": {
       "custom": {
-        "greeting_message": "Hello, nextmv!"
+        "greeting_message": "Hello, nextmv!",
+        "nextmv_version": "v0.0.0"
       },
       "duration": 0.123,
       "value": 14
