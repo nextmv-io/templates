@@ -1,4 +1,9 @@
-# Nextmv templates
+# 🚨 WARNING - THIS REPOSITORY HAS BEEN ARCHIVED 🚨
+
+Please go to <https://github.com/nextmv-io/community-apps> for basic examples
+of how to use the Nextmv platform.
+
+## Nextmv templates
 
 Use our templates to start modeling an optimization app in your favorite
 language.
